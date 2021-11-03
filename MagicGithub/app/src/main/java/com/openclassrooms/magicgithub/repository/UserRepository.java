@@ -10,14 +10,15 @@ public class UserRepository {
     private final ApiService apiService; // TODO: A utiliser
 
     /**
-     * Si on regarde le constructeur de la classe UserRepository, on voit que ce constructeur défini un
+     * Si on regarde le constructeur de la classe UserRepository, on voit que ce constructeur définit un
      * paramètre du type de l'Interface ApiService.
      *
      */
 
 
-    //Lors de l'execution du C il recoit en param une instance de la classe fake userrepository
-    //cette instance est sauve dans la variable apiservice, ce grace a quoi on va pouvoir utiliser les méthodes FAS la base de donnée
+    //Lors de l'execution il reçoit en param une instance de la classe FakeUserRepository
+    //cette instance est sauvegardé dans la variable apiservice, ce grace a quoi on va pouvoir utiliser les méthodes FakeApiS de la base de donnée
+
     public UserRepository(ApiService apiService) {
         this.apiService = apiService;
     }
